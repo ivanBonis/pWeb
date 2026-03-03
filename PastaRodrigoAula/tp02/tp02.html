@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang = "pt-PT">
+<head>
+        <meta charset = "UTF-8">
+        <title> Inscrição para evento </title>
+</head>
+<body>
+    <header>
+        <h1> Eventos da UBI</h1>
+        <img src = "logo_ubi.jng" alt = "logo da ubi" width="350">
+    </header>
+
+    <nav>
+        <ul aria-label="Navegação principal">
+            <li><a href="https://www.ubi.pt" target="_blank">Início</a></li>
+            <li><a href="https://www.google.com/maps/place/Universidade+da+Beira+Interior/@40.2778631,-7.5115579,17z/data=!3m1!4b1!4m6!3m5!1s0xd3d239a23229d91:0xdc5055bacc929cec!8m2!3d40.277859!4d-7.508983!16zL20vMDJsZ2Jt?hl=pt-PT&entry=ttu&g_ep=EgoyMDI2MDIyNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Localização</a></li>
+        </ul>
+    </nav>
+
+    <h2> Formulario obrigatorio.</h2>
+    <main>
+        <form>
+            <div>
+                <label for="nome"> Nome completo</label> 
+                <input type="text" id="nome" minlength="3" maxlength="30" required>
+
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <div>
+                <label for="CodPostal"> Codigo postal</label>
+                <input type="text" id="CodPostal" name="CodPostal" pattern="\d{4}-\d{3}">
+            </div>
+
+            <div>
+                <label for="ingresso"> Tipo de ingresso</label>
+                <select id="ingresso" name="required" required>
+                    <option value="">...</option>
+                    <option value="estudante">estudante</option>
+                    <option value="pessoa independente"> pessoa independente</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <input type="submit" value="Enviar inscrição">
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>Contactos: ubi.pt | Telefone : 275 234 983</p>
+    </footer>
+</body>
+</html>
