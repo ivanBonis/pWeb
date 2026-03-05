@@ -1,0 +1,59 @@
+%2.1
+sobre(a, mesa). 
+sobre(b, a).    
+
+
+% Se um objeto está sobre outro, está acima dele
+acima(X, Y) :- sobre(X, Y).
+
+% O predicado acima é transitivo (recursividade)
+acima(X, Y) :- sobre(X, Z), acima(Z, Y).
+
+
+% ?- acima(b, mesa).:
+%				true
+
+
+%2.2
+
+parte_de(estrutura, fogao).
+parte_de(resistencia_aquecimento, estrutura).
+parte_de(painel_fogao, estrutura).
+parte_de(cordao_electrico, fogao).
+parte_de(fio_metalico, cordao_electrico).
+parte_de(isolador, cordao_electrico).
+parte_de(botao, painel_fogao).
+
+feito_em(resistencia_aquecimento, metal).
+feito_em(fio_metalico, metal).
+feito_em(botao, plastico).
+feito_em(isolador, fibra_plastica).
+
+% feito_em(X, metal).? :
+%					X = resistencia_aquecimento
+%					X = fio_metalico
+
+% feito_em(X, Material), Material \= plastico.? :
+% 	Material = metal,
+%		X = resistencia_aquecimento
+%	Material = metal,
+%		X = fio_metalico
+%	Material = fibra_plastica,
+%		X = isolador
+
+% feito_em(X, Material), Material \= plastico,  Material \= fibra_plastica.? :
+%	Material = metal,
+%		X = resistencia_aquecimento
+%	Material = metal,
+%		X = fio_metalico
+
+% Caso base: 
+faz_parte(X, fogao) :- parte_de(X, fogao).
+% Caso recursivo: (faz parte de algo que pertence ao fogão)
+faz_parte(X, fogao) :- parte_de(X, Y), faz_parte(Y, fogao).
+
+%teste:
+% faz_parte(botao, fogao).? :
+%						true
+
+
