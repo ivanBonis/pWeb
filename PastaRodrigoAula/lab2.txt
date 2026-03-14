@@ -1,0 +1,45 @@
+% O que está diretamente sobre o quê
+sobre(a, mesa).
+sobre(b, a).
+
+%Se X está sobre Y, então está acima de Y
+acima_de(Objeto1, Objeto2) :- 
+    sobre(Objeto1, Objeto2).
+
+%X está acima de Y se estiver sobre um objeto Z que está acima de Y
+acima_de(Objeto1, Objeto2) :- 
+    sobre(Objeto1, Intermedio), 
+    acima_de(Intermedio, Objeto2).
+
+%Define a estrutura de peças e subpeças
+parte_de(estrutura, fogao).
+parte_de(cordao_electrico, fogao).
+
+parte_de(resistencia_aquecimento, estrutura).
+parte_de(painel_fogao, estrutura).
+
+parte_de(botao, painel_fogao).
+
+parte_de(fio_metalico, cordao_electrico).
+parte_de(isolador, cordao_electrico).
+
+%Atribui um material a cada componente final
+feito_em(resistencia_aquecimento, metal).
+feito_em(fio_metalico, metal).
+feito_em(botao, plastico).
+feito_em(isolador, fibra_plastica).
+
+%O objeto é uma peça direta do fogão
+faz_parte_do_fogao(Componente) :- 
+    parte_de(Componente, fogao).
+
+%O objeto é parte de algo que pertence ao fogão
+faz_parte_do_fogao(Componente) :- 
+    parte_de(Componente, Subconjunto), 
+    faz_parte_do_fogao(Subconjunto).
+
+% Exemplo de teste: ?- faz_parte_do_fogao(botao). -> true.
+%?- acima_de(b, mesa).-> true
+%?- faz_parte_do_fogao(plastico).-> false
+%?-faz_parte_do_fogao(X).->[estrutura, cordao_electrico, resistencia_aquecimento,painel_fogao,botao,fio_metalico,isolador];
+
