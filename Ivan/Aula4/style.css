@@ -31,3 +31,31 @@
     }
 }
 
+article {
+    padding: 30px 20px;
+    flex: 2;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+aside {
+    flex: 1;
+}
+
+#div-ad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 20px;
+}
