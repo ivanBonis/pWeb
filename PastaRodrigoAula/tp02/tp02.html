@@ -1,58 +1,69 @@
 <!DOCTYPE html>
-<html lang = "pt-PT">
+<html lang="pt-PT">
 <head>
-        <meta charset = "UTF-8">
-        <title> Inscrição para evento </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição para Evento - UBI</title>
 </head>
 <body>
     <header>
-        <h1> Eventos da UBI</h1>
-        <img src = "logo_ubi.jng" alt = "logo da ubi" width="350">
+        <h1>Eventos da UBI</h1>
+        <img src="logo.png" alt="Logótipo da UBI" width="300">
     </header>
 
     <nav>
         <ul aria-label="Navegação principal">
-            <li><a href="https://www.ubi.pt" target="_blank">Início</a></li>
-            <li><a href="https://www.google.com/maps/place/Universidade+da+Beira+Interior/@40.2778631,-7.5115579,17z/data=!3m1!4b1!4m6!3m5!1s0xd3d239a23229d91:0xdc5055bacc929cec!8m2!3d40.277859!4d-7.508983!16zL20vMDJsZ2Jt?hl=pt-PT&entry=ttu&g_ep=EgoyMDI2MDIyNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Localização</a></li>
+            <li><a href="https://www.ubi.pt" target="_black">Início</a></li>
+            <li><a href="https://www.google.com/maps/dir/University+of+Beira+Interior,+Universidade+da+Beira+Interior,+R.+Marquês+de+Ávila+e+Bolama,+6201-001+Covilhã/University+of+Beira+Interior,+Universidade+da+Beira+Interior,+R.+Marquês+de+Ávila+e+Bolama,+6201-001+Covilhã/@40.2784256,-7.5137024,14z/data=!4m13!4m12!1m5!1m1!1s0xd3d239a23229d91:0xdc5055bacc929cec!2m2!1d-7.508983!2d40.277859!1m5!1m1!1s0xd3d239a23229d91:0xdc5055bacc929cec!2m2!1d-7.508983!2d40.277859?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Localização</a></li>
         </ul>
     </nav>
 
-    <h2> Formulario obrigatorio.</h2>
+    <h3> Por favor, preencha o formulario a baixo:</h3>
     <main>
         <form>
-            <div>
-                <label for="nome"> Nome completo</label> 
-                <input type="text" id="nome" minlength="3" maxlength="30" required>
-
+            <div> 
+                <label for="nome">Nome completo</label>
+                <input type="text" id="nome" minlength="3" maxlength="50" required>
             </div>
-
-            <div>
+            <div> 
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email">
+                <input type="email" id="email" name="email" placeholder="example@gmail.com">
+            </div>
+            
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" required>
+            
+            <div>
+
+                <label for="url">Pagina pessoal</label>
+                <input type="url" id = "url" name="url" placeholder="https://example.com">
+            </div>
+            <div>
+                <label for="codPostal">Código postal</label>
+                <input type="text" id="codPostal" name="codPostal" 
+                pattern="\d{4}-\d{3}" title="Formato: 0000-000" placeholder="0000-000">
             </div>
 
             <div>
-                <label for="CodPostal"> Codigo postal</label>
-                <input type="text" id="CodPostal" name="CodPostal" pattern="\d{4}-\d{3}">
-            </div>
-
-            <div>
-                <label for="ingresso"> Tipo de ingresso</label>
-                <select id="ingresso" name="required" required>
-                    <option value="">...</option>
-                    <option value="estudante">estudante</option>
-                    <option value="pessoa independente"> pessoa independente</option>
+                <label for="ingresso">Tipo de ingresso</label>
+                <select id="ingresso" name="ingresso" required>
+                    <option value="">Escolha uma opcao...</option>
+                    <option value="estudante">Estudante</option>
+                    <option value="professor">Professor</option>
+                    <option value="visitante">Visitante</option>
                 </select>
             </div>
             <br>
             <div>
-                <input type="submit" value="Enviar inscrição">
+                <input type="submit" value="Enviar Inscrição">
             </div>
         </form>
+        
     </main>
 
     <footer>
-        <p>Contactos: ubi.pt | Telefone : 275 234 983</p>
+        <hr>
+        <p>Contactos: <a href="https://ubi.pt">ubi.pt</a> | Telefone: 275 234 983</p>
     </footer>
 </body>
 </html>
