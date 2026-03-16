@@ -16,8 +16,6 @@ A organização do sistema de ficheiros reflete as áreas de trabalho e as submi
 
 ## Contribuidores
 A gestão de versões e autoria do código é mantida pelos seguintes elementos:
-* Ivan Bonis (`@ivanBonis`)
+* Ivan (`@ivanBonis`)
 * Rodrigo Ferreira (`@RodrigoFerreira50`)
 
----
-*Documento gerado para a UC de Programação Web | Ano Letivo 2025/2026*
