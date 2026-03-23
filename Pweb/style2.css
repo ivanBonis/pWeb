@@ -1,0 +1,129 @@
+    
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+header{
+    background-color:#1513a2;
+    color:white;
+    padding:20px;
+}
+
+
+header h1{
+    margin-bottom:10px;
+}
+
+
+.menu{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+}
+
+.menu a:hover{
+    color:#ff9800;
+}
+
+
+.conteudo{
+    display:flex;
+    gap:20px;
+    padding:20px;
+}
+
+
+article{
+    flex:3;
+    background:#f5f5f5;
+    padding:20px;
+}
+
+
+aside{
+    flex:1;
+    background:#ddd;
+    padding:10px;
+}
+
+
+footer{
+    background:#1513a2;
+    color:white;
+    text-align:left;
+    padding:15px;
+}
+
+
+.form-contacto{
+    margin-top:20px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+
+.form-contacto input,
+.form-contacto textarea{
+    padding:10px;
+    width:100%;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+
+.form-contacto input:focus,
+.form-contacto textarea:focus{
+    outline:none;
+    border-color:#ff9800;
+}
+
+
+.btn-enviar{
+    padding:10px;
+    background:#ff9800;
+    border:none;
+    color:white;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+
+.btn-enviar:hover{
+    background:#e68900;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.logo img{
+    width:100px;
+    height:auto;
+}
+
+aside h3{
+    
+    background-color: white;
+    color: black;
+    
+    
+}
+#div-img-pub{
+display: flex;
+    background-color:white;
+    justify-content: CENTER;
+    align-items: center;
+    
+}

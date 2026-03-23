@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head> 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+<title>Alzheimerbet</title>
+<style> 
+body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; background-color: #060101; }
+        header, nav, main, footer { background: #127931; padding: 20px; margin-bottom: 10px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        nav ul { list-style: none; padding: 0; display: flex; gap: 15px; }
+        nav a { text-decoration: none; color: #02080f; font-weight: bold; }
+        form div { margin-bottom: 15px; }
+        label { display: block; font-weight: bold; margin-bottom: 5px; }
+        input[type="text"], input[type="email"], input[type="tel"], input[type="url"], select {
+            width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;
+        }
+        input[type="submit"] { background: #030910; color: rgb(14, 97, 69); padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; }
+        input[type="submit"]:hover { background: #085b4e; }
+    </style>
+<header>
+    <img src="C:\Users\ASUS\Documents\Pweb\ChatGPT Image 23_02_2026, 18_06_36.png" alt="Logotipo Do Casino" width="20%">
+    <h1>Cadastro Na Alzheimerbet</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Regras/Direitos</a></li>
+            <li><a href="#">Cookies</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Dados Pessoais</h2>
+            <form action="#" method="post" enctype="multipart/form-data">
+                
+                <div>
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" minlength="3" maxlength="50" placeholder="Nome Completo" required>
+                </div>
+
+                <div>
+                    <label for="email">Endereço de Email:</label>
+                    <input type="email" id="email" name="email" placeholder="exemplo@mail.com" required>
+                </div>
+
+                <div>
+                    <label for="telefone">Telemóvel / Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="9xxxxxxxx" required>
+                </div>
+
+                <div>
+                    <label for="url">IBAN:</label>
+                    <input type="url" id="url" name="url" placeholder="PT0050xxxxxxxxxxxxxx">
+                </div>
+
+                <div>
+                    <label for="cp">Código Postal:</label>
+                    <input type="text" id="cp" name="cp" pattern="\d{4}-\d{3}" title="Formato: 0000-000" placeholder="6200-000" required>
+                </div>
+
+                <div>
+                    <label for="ingresso">Profissão:</label>
+                    <select id="ingresso" name="ingresso" required>
+                        <option value="">-- Escolha uma opção --</option>
+                        <option value="estudante">Estudante</option>
+                        <option value="profissional">Empregado</option>
+                        <option value="vip">Desempregado</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="foto">Documento IBAN:</label>
+                    <input type="file" id="foto" name="foto" accept="image/*" required>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="termos" name="termos" required>
+                    <label style="display: inline;" for="termos">Aceito os termos e condições do casino.</label>
+                </div>
+
+                <input type="submit" value="Enviar Inscrição">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Casino Legal| Contacto: suporte@alzheimer.pt</p>
+    </footer>
+
+</body>
+</html>
