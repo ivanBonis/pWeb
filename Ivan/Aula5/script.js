@@ -1,5 +1,4 @@
 var nome = "Ivan";
-console.log(nome);
 
 // Aceder button btnClicar
 const btnClicar = document.querySelector("#btnClicar");
@@ -12,13 +11,12 @@ const lista = document.querySelector("#lista");
 
 // Criar um evento para o botao
 btnClicar.addEventListener('click', function () {
-    // alert("Butao pressionado");
     titulo1.textContent = "Olá, mundo!";
     titulo1.style.backgroundColor = "red";
 });
 
-caixaTexto.addEventListener('keypress', function (evt) {
-    if (evt.key === "Enter") {
+caixaTexto.addEventListener('keydown', function (evt) {
+    if (evt.key === "ArrowRight") {
         console.log(caixaTexto.value);
     }
 });
@@ -26,3 +24,4 @@ caixaTexto.addEventListener('keypress', function (evt) {
 lista.addEventListener('click', function (evt) {
     evt.target.remove();
 });
+
