@@ -3,19 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexbox tutorial</title>
+    <title>Contactos</title>
     <link rel="stylesheet" href="styl04.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">
-            <img src="logo.png" alt="logotipo ubi">
+    <header class="site-header" id="topo">
+        <div class="header-inner">
+            <h1 class="site-title">
+                <img class="site-logo" src="logo.png" alt="Universidade da Beira Interior">
+            </h1>
+            <nav aria-label="Menu principal">
+                <ul class="menu-links">
+                    <li><a href="#contacto">Contactos</a></li>
+                    <li><a href="Informações">Informações</a></li>
+                    <li><a href="https://www.google.com/?client=safari">Rodapé</a></li>
+                    </a></li>
+                </ul>
+            </nav>
         </div>
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Contactos</a></li>
-        </ul>
-    </nav>
-</body>
-</html>
+    </header>
+
+    <section class="content-section" id="contacto">
+        <article class="main-article">
+            <h2>Envie uma mensagem</h2>
+            <p>
+                Preencha os campos abaixo e enviaremos a sua mensagem o mais breve possível.
+            </p>
+
+            <form class="contact-form" action="#" method="POST">
+                <h3>Formulário de contacto</h3>
+
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input class="contact-input" type="text" id="nome" name="nome" required autocomplete="name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input class="contact-input" type="email" id="email" name="email" required autocomplete="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea class="contact-input contact-textarea" id="mensagem" name="mensagem" rows="5" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="pass">Password:</label>
+                    <input type="password" id="pass" name="password" required autocomplete="current-password">
+                </div>
+
+                <button type="submit" class="contact-submit">Enviar</button>
+            </form>
+        </article>
+
+        <aside class="sidebar" id="informacoes">
+            <h3>Informações úteis</h3>
+            <p>Atendimento: Segunda a Sexta, 9h-18h.</p>
+            <p>Para questões gerais, use o formulário de contacto ao lado.</p>
+        </aside>
+    </section>
+
+    <footer class="site-footer" id="rodape">
+        <p>Copyright &copy; 2024 - Todos os direitos reservados.</p>
+    </footer>
+</body></html>

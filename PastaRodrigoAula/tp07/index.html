@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Armazenamento no Browser</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 30px; }
+        section { border: 1px solid #ccc; padding: 20px; margin-bottom: 20px; border-radius: 8px; }
+        input, button { margin: 5px; padding: 8px; }
+        table { border-collapse: collapse; width: 100%; margin-top: 15px; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        th { background-color: #f4f4f4; }
+    </style>
+</head>
+<body>
+    <h1>Teste de Armazenamento Web</h1>
+
+    <section>
+        <h2>1. LocalStorage & SessionStorage</h2>
+        <input type="text" id="nome" placeholder="Introduz o teu nome">
+        <button onclick="guardarLocal()">Guardar LocalStorage</button>
+        <button onclick="guardarSession()">Guardar SessionStorage</button>
+        <button onclick="lerDados()">Ler Dados na Consola</button>
+    </section>
+
+    <section>
+        <h2>2. IndexedDB - Gestão de Alunos</h2>
+        <div>
+            <input type="number" id="alunoId" placeholder="ID (ex: 1)">
+            <input type="text" id="alunoNome" placeholder="Nome">
+            <input type="text" id="alunoCurso" placeholder="Curso">
+            <button onclick="adicionarAluno()">Adicionar à IndexedDB</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Curso</th>
+                </tr>
+            </thead>
+            <tbody id="tabelaAlunos">
+                </tbody>
+        </table>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+    "disciplinas": [
+      {
+        "designacao": "Bases de Dados",
+        "teorica": { "codigo": "T01", "nome": "Filipe" },
+        "pratica": { "codigo": "P01", "nome": "Ana" }
+      },
+      {
+        "designacao": "Redes de Computadores",
+        "teorica": { "codigo": "T02", "nome": "Carlos" },
+        "pratica": { "codigo": "P02", "nome": "Bruno" }
+      }
+    ]
+  }
