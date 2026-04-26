@@ -1,0 +1,40 @@
+*{box-sizing:border-box ; margin:0 ;padding: 0;}
+#btnxpto{
+
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding:10px 20px ;
+    background-color: rgb(224, 211, 211);
+    border: 3px solid #5e5a5a;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow:2px 2px 5px rgba(0,0,0,0.3) ;
+    transition: all 0.3s ease;
+
+}
+#btnxpta{
+    background-color: red;
+
+}
+
+#btnxpto:hover{
+    background-color:#45a049 ;
+    transform: scale(1.05);
+}
+ div button{
+    background-color: green;
+ }
+ .submitbutton{
+    font-size:16px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding:10px 20px;
+    background-color: blue;
+    border: 3px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow:2px 2px 5px rgba(0,0,0,0.3) ;
+    transition: all 0.3s ease;
+ }
+
+
+ 
